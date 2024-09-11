@@ -1,0 +1,10 @@
+Universe       = vanilla
+Notification   = never
+Priority       = +10
+GetEnv         = true
+Executable     = run
+Arguments      = "__OBV__ __MER__ __ORD__ __TASKTAG__ __RDSEED__"
+Log            = .__TASKTAG__.log
+Output         = .__TASKTAG__.out
+Error          = .__TASKTAG__.err
+Queue
