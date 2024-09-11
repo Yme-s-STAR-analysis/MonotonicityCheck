@@ -36,7 +36,7 @@ for i in range(nEntries):
     os.system(f'sed -i "s|__OBV__|{obv}|g" {jobFile}')
     os.system(f'sed -i "s|__MER__|{err}|g" {jobFile}')
     os.system(f'sed -i "s|__ORD__|{ord}|g" {jobFile}')
-    os.system(f'sed -i "s|__TASKTAG__|{taskTag}|g" {jobFile}')
+    os.system(f'sed -i "s|__TASKTAG__|{taskTag}-{i}|g" {jobFile}')
     os.system(f'sed -i "s|__RDSEED__|{rdSeedStart+i}|g" {jobFile}')
 
 print('Submitting jobs')
